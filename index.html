@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>生成AI伴走ライトプラン | ONE‑STOP WEB PARTNER</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root{
+    --primary:#00b5c4;
+    --dark:#24364c;
+    --light:#f7fafc;
+    --max:1200px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,'Noto Sans JP',sans-serif;color:var(--dark);background:var(--light);line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  header,section{padding:4rem 1rem}
+  .container{max-width:var(--max);margin:auto}
+  /* hero */
+  #hero{background:linear-gradient(135deg,#0e2a47 0%,#114a5b 50%,#0e2a47 100%);color:#fff;position:relative;text-align:center;padding:6rem 1rem 7rem}
+  #hero h1{font-size:2.5rem;font-weight:700;line-height:1.2}
+  #hero h2{font-size:1.15rem;margin:1rem 0 2rem}
+  #hero .cta{display:inline-block;background:var(--primary);padding:.9rem 2.5rem;border-radius:4px;font-weight:600}
+  #hero small{display:block;margin-top:.5rem;font-size:.9rem}
+  /* sections */
+  h3.section-title{font-size:1.75rem;font-weight:700;margin-bottom:2rem;text-align:center}
+  .cards{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center}
+  .card{background:#fff;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.05);padding:2rem;flex:1 1 260px;text-align:center}
+  .card svg{width:48px;height:48px;margin-bottom:.75rem;fill:var(--primary)}
+  /* table */
+  table{width:100%;border-collapse:collapse;margin-top:1rem}
+  th,td{border:1px solid #e2e8f0;padding:.75rem;text-align:center}
+  th{background:#edf2f7;font-weight:600}
+  tr:nth-child(even){background:#f9fbfc}
+  /* flow */
+  .flow{display:flex;flex-wrap:wrap;gap:1.5rem;counter-reset:step}
+  .step{background:#fff;border-left:4px solid var(--primary);padding:1rem 1.25rem;flex:1 1 280px;position:relative}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;left:-30px;top:50%;transform:translateY(-50%);background:var(--primary);color:#fff;width:24px;height:24px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:.9rem}
+  /* faq */
+  details{background:#fff;border-radius:4px;margin-bottom:.75rem;padding:1rem}
+  summary{font-weight:600;cursor:pointer;list-style:none}
+  summary::marker,summary::-webkit-details-marker{display:none}
+  /* footer */
+  footer{background:#1a202c;color:#fff;text-align:center;padding:2rem 1rem;font-size:.9rem}
+  /* media */
+  @media(min-width:768px){
+    #hero h1{font-size:3rem}
+  }
+</style>
+</head>
+<body>
+
+<header id="hero">
+  <div class="container">
+    <h1>PoCで止めない。<br>生成AI導入を、最短ルートで。</h1>
+    <h2>ONE‑STOP WEB PARTNER — 売上5〜20 億円規模企業向け「伴走ライト」プラン</h2>
+    <a href="#contact" class="cta">無料相談を申し込む</a>
+    <small>初回QA 1件無料</small>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h3 class="section-title">よくある課題</h3>
+    <div class="cards">
+      <div class="card">
+        <svg viewBox="0 0 24 24"><path d="M11 2a9 9 0 100 18 9 9 0 000-18zm0-2c6.075 0 11 4.925 11 11s-4.925 11-11 11S0 17.075 0 11 4.925 0 11 0z"/><path d="M11.5 6h-1v6l5.25 3.15.5-.86L11.5 11.2V6z"/></svg>
+        <p>セミナー後に<br>PoCが停滞</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16v2H4zM4 9h16v2H4zM4 14h10v2H4zM4 19h10v2H4z"/></svg>
+        <p>ノウハウ不足で<br>手戻り発生</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24"><path d="M12 1l3 5H9l3-5zm6 8v11H6V9h12zm0-2H6a2 2 0 00-2 2v11a2 2 0 002 2h12a2 2 0 002-2V9a2 2 0 00-2-2z"/></svg>
+        <p>高額コンサルは<br>予算外</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#e6f7f9">
+  <div class="container">
+    <h3 class="section-title">サービス内容</h3>
+    <ul class="cards">
+      <li class="card">POC 実践シート<br><small>(Excel テンプレ)</small></li>
+      <li class="card">Slack / メール QA<br><small>1営業日以内回答</small></li>
+      <li class="card">事例ナレッジサイト<br><small>週次更新</small></li>
+      <li class="card">週次 AI メルマガ</li>
+      <li class="card">社内ガイドライン雛形</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h3 class="section-title">料金プラン</h3>
+    <table>
+      <tr><th>プラン</th><th>月額</th><th>質問上限／月</th><th>追加質問</th></tr>
+      <tr><td><strong>Starter</strong></td><td><strong>55,000円</strong></td><td>20 件</td><td>1,500円</td></tr>
+      <tr><td>Pro</td><td>88,000円</td><td>50 件</td><td>1,200円</td></tr>
+      <tr><td>Premium</td><td>110,000円</td><td>80 件</td><td>1,000円</td></tr>
+    </table>
+    <p style="margin-top:.5rem;font-size:.85rem;text-align:right">※ Fair‑Use 条項：上限超過が恒常化する場合は翌月プラン変更をご案内。</p>
+  </div>
+</section>
+
+<section style="background:#e6f7f9">
+  <div class="container">
+    <h3 class="section-title">競合比較と当社の強み</h3>
+    <table>
+      <tr><th>項目</th><th>当社</th><th>主要競合</th></tr>
+      <tr><td>月額</td><td><strong>5.5〜11万円</strong></td><td>50〜100万円</td></tr>
+      <tr><td>契約期間</td><td>1か月〜</td><td>2〜6か月</td></tr>
+      <tr><td>対応形式</td><td>完全非同期／1営業日以内</td><td>訪問・同期中心</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h3 class="section-title">導入フロー（最短5営業日）</h3>
+    <div class="flow">
+      <div class="step">お申し込み・NDA締結</div>
+      <div class="step">キックオフ（オンライン30分）</div>
+      <div class="step">現状ヒアリングシート提出</div>
+      <div class="step">POC実践シート提供・設定</div>
+      <div class="step">運用開始 &amp; QA対応</div>
+      <div class="step">月次レポート提出 → 改善</div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#e6f7f9">
+  <div class="container">
+    <h3 class="section-title">よくある質問</h3>
+
+    <details>
+      <summary>部署をまたいで利用できますか？</summary>
+      <p>同一法人内であれば、プラン内で自由にご利用いただけます。</p>
+    </details>
+    <details>
+      <summary>同期ミーティングは本当に不要？</summary>
+      <p>基本は非同期ですが、必要に応じて1h/5万円で追加可能です。</p>
+    </details>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container" style="text-align:center">
+    <h3 class="section-title">今すぐ始める</h3>
+    <p style="margin-bottom:1.5rem;font-weight:600">ご返信いただければ、最短当日中にキックオフ日程をご提案します。</p>
+    <a href="mailto:support@example.com?subject=伴走ライト無料相談" class="cta">メールで問い合わせる</a>
+  </div>
+</section>
+
+<footer>
+株式会社○○ 生成AI 伴走事業部 / 担当：山田・佐藤<br>
+E‑mail : support@example.com　|　Tel : 03‑1234‑5678
+</footer>
+
+</body>
+</html>
